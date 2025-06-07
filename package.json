@@ -11,7 +11,7 @@
     "dev": "npm-run-all --parallel dev:frontend dev:backend",
     "dev:frontend": "vite --open",
     "dev:backend": "convex dev",
-    "build": "npx convex deploy --prod && tsc && vite build",
+    "build": "npx convex dev --once && npx convex deploy --prod && tsc && vite build",
     "build:local": "tsc && vite build",
     "preview": "vite preview",
     "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build",
