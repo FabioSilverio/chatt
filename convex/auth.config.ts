@@ -1,4 +1,4 @@
-        import { defineAuthConfig, defineOAuthProvider } from "@convex-dev/auth/server";
+        import { defineAuthConfig, defineOAuthProvider } from "convex/server";
 
         export default defineAuthConfig({
           providers: [
