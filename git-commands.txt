@@ -1,0 +1,58 @@
+🚀 COMANDOS PARA COLOCAR O CÓDIGO NO GITHUB
+
+1. PRIMEIRO, CRIE UM REPOSITÓRIO NO GITHUB:
+   - Vá em github.com
+   - Clique em "New repository"
+   - Nome: chat-app-realtime
+   - NÃO marque nenhuma opção adicional
+   - Clique "Create repository"
+
+2. DEPOIS, EXECUTE ESTES COMANDOS NO TERMINAL:
+
+# Navegar para a pasta do projeto
+cd /caminho/para/seu/projeto
+
+# Inicializar Git
+git init
+
+# Configurar Git (substitua pelos seus dados)
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@gmail.com"
+
+# Adicionar todos os arquivos
+git add .
+
+# Primeiro commit
+git commit -m "🎉 Primeiro commit: Chat App completo"
+
+# Renomear branch para main
+git branch -M main
+
+# Conectar com GitHub (SUBSTITUA pela sua URL)
+git remote add origin https://github.com/SEU_USUARIO/chat-app-realtime.git
+
+# Enviar código para GitHub
+git push -u origin main
+
+3. PARA FUTURAS ATUALIZAÇÕES:
+
+# Adicionar mudanças
+git add .
+
+# Commit com mensagem
+git commit -m "Descrição da mudança"
+
+# Enviar para GitHub
+git push
+
+4. DEPLOY NA VERCEL:
+
+# Opção 1: Conectar repositório GitHub na Vercel (mais fácil)
+# Vá em vercel.com → New Project → Selecione seu repositório
+
+# Opção 2: CLI da Vercel
+npm install -g vercel
+vercel login
+vercel
+
+PRONTO! 🎉
